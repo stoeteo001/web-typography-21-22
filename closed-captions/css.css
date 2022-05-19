@@ -35,10 +35,10 @@ img {
 .sound5 #effects #fuckoff {
     --grote: 4;
     opacity: 1;
-    top: 25vh;
+    top: 30vh;
     left: 80vh;
-    animation: fuck-off 1.2s; 
-    animation-fill-mode:forwards;
+    animation: fuck-off 1.2s;
+    animation-fill-mode: forwards;
 }
 
 #closed-captions .on {
@@ -50,39 +50,53 @@ img {
     opacity: 0;
 }
 
-.voice1:before{
-    
-    content: "voice 1:";
+.voice1:before {
+
+    content: "Narrator:";
     color: aqua;
 }
 
 .voice1 {
     color: white;
+    font-family: "brenner condensed";
     font-style: italic;
 }
 
-.voice2:before{
-    
-    content: "voice 2:";
+.voice2:before {
+
+    content: "Officer K:";
     color: hotpink;
 }
 
 .voice2 {
     color: white;
+    font-family: "brenner slab";
     font-weight: bold;
 }
 
-.voice3:before{
-    
-    content: "voice 3:";
+.voice3:before {
+
+    content: "Agent:";
     color: yellow;
 }
 
 .voice3 {
     color: white;
     font-weight: italic;
+    font-family: "brenner display";
 }
 
+
+.voice4:before {
+
+    content: "Narrator:";
+    color: red;
+}
+
+.voice4 {
+    color: white;
+    font-weight: italic;
+}
 
 
 
@@ -173,9 +187,18 @@ You probably want to change the styling.
     font-family: "brenner slab";
 }
 
-.p0.on span:nth-of-type(37) {
+
+.p5.on span:nth-of-type(6) {
     opacity: 1;
-    transition: 0s 3.7s;
+    transition: 0s 1s ease;
+    font-weight: 600;
+    font-family: "brenner slab";
+}
+
+.p5.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1s ease;
+    font-weight: 600;
     font-family: "brenner slab";
 }
 
@@ -184,12 +207,100 @@ You probably want to change the styling.
     background: hotpink;
     color: skyblue;
     font-size: 50px;
-    left:60vw;
+    left: 60vw;
     top: 80vh;
-    
+
 }
 
+.p6.on span {
 
+
+    animation: scale-text 2s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p8.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p11.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p14.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p17.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p22.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p28.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p33.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p48.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
+
+.p51.on span {
+
+
+    animation: scale-text2 1s ease;
+    animation-iteration-count: 1;
+    transition: 2s;
+
+}
 
 /* **********************************************
 Sounds.
@@ -200,15 +311,15 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 
-.sound1:before{
-    content: "ALARM";
+.sound1:before {
+    content: "";
     color: white;
     font-size: 8vw;
     left: 2.5em;
     z-index: -1;
     position: absolute;
     animation: alarm-shake 1s,
-        dissapear 3s;
+    dissapear 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -223,9 +334,10 @@ iframe {
     width: 100vh;
     grid-column-start: 2;
     grid-row-start: 2;
-    clip-path
-    transition: 1s;
+    clip-path transition: 1s;
 }
+
+
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 
@@ -234,12 +346,89 @@ iframe {
     animation-iteration-count: 2;
 }
 
-.sound2 iframe{
-    
+.sound2 iframe {
+
     animation: alarm-boxshadow1 1s,
-        alarm-boxshadow2 2s 2s;
+    alarm-boxshadow2 2s 2s;
     animation-iteration-count: 3;
+
+}
+
+.sound4 {
+
+    animation: color-flash2 3s;
+    animation-iteration-count: 1;
+
+}
+
+.sound6 iframe {
+
+    animation: slideRight 6s;
+    animation-iteration-count: 1;
+    transition: 4s;
+}
+
+.sound7 {
+
+    animation-name: none;
+}
+
+.sound8 {
+
+    animation: color-flash2 3s;
+    animation-iteration-count: 1;
+
+}
+
+
+
+.sound9 {
+    animation-name: none;
+}
+
+.sound10 {
+
+    animation: color-flash2 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+
+}
+
+.sound11 {
+
+    background: url('images/paranoioa.gif') repeat 0 0;
+
+    animation: tremble 10s;
+    animation-iteration-count: infinite;
+    transition: 10s;
+}
+
+.sound11 iframe{
     
+    animation: alarm-boxshadow3 44s;
+}
+
+.sound12 {
+    animation-name: none;
+    background: #242526;
+}
+
+.sound14 {
+    animation: tremble 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.sound15 {
+
+    background: url('images/paranoioa.gif') repeat 0 0;
+
+}
+
+.sound15 iframe {
+
+    animation: zoomin 20s;
+    animation-iteration-count: 1;
 }
 
 @keyframes color-flash {
@@ -258,6 +447,16 @@ iframe {
         background-color: #FFFFFF;
     }
 }
+
+@keyframes color-flash2 {
+
+    0% {
+        background-color: #C21807;
+        opacity: 1;
+
+    }
+}
+
 
 @keyframes alarm-shake {
     0% {
@@ -281,53 +480,207 @@ iframe {
 }
 
 @keyframes fuck-off {
- 0% { 
-    transform: scale(1,1);
-  } 
-  
-  10% {
-    
-    transform: scale(1.05,1); 
-  }
-  
-  30% { 
-    transform: scale(.95,1);
-  }
-  
-  50%{
-    transform: scale(1,1);  
-  }
+    0% {
+        transform: scale(1, 1);
+    }
 
-  90%{
-  
-      opacity:1;
-  }  
-  100%{ 
-    
-   opacity: 0; 
-  }
+    10% {
+
+        transform: scale(1.05, 1);
+    }
+
+    30% {
+        transform: scale(.95, 1);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    90% {
+
+        opacity: 1;
+    }
+    100% {
+
+        opacity: 0;
+    }
 }
 
 @keyframes dissapear {
- 
-    0%{
-        
-    }
-    
-    100%{
-        
+
+    0% {}
+
+    100% {
+
         opacity: 0;
     }
-} 
+}
 
 @keyframes alarm-boxshadow1 {
-  50% {box-shadow: 10px 20px 30px hotpink;
-    
+    50% {
+        box-shadow: 10px 20px 30px hotpink;
+
     }
 }
 
 @keyframes alarm-boxshadow2 {
-  50% {box-shadow: 10px 20px 30px skyblue;
-    
+    50% {
+        box-shadow: 10px 20px 30px skyblue;
+
     }
 }
+
+@keyframes alarm-boxshadow3 {
+    50% {
+        box-shadow: 10px 20px 30px grey;
+
+    }
+    
+    100%{ -webkit-box-shadow: 10px 10px 153px 47px rgba(255,255,255,0.72);
+-moz-box-shadow: 10px 10px 153px 47px rgba(255,255,255,0.72);
+box-shadow: 10px 10px 153px 47px rgba(255,255,255,0.72);
+        
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(-25%)
+    }
+
+    60% {
+        transform: translateX(25%);
+    }
+
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+    2% {
+        transform: translate(2em, 0)
+    }
+
+    5 {
+        transform: translate(3em, 0)
+    }
+
+    9% {
+        transform: translate(2em, 0)
+    }
+    11% {
+        transform: translate(3em, 0)
+    }
+
+    14 {
+        transform: translate(2em, 0)
+    }
+
+    20% {
+        transform: translate(3em, 0)
+    }
+    25% {
+        transform: translate(2em, 0)
+    }
+
+    35 {
+        transform: translate(3em, 0)
+    }
+
+    45% {
+        transform: translate(2em, 0)
+    }
+    52% {
+        transform: translate(3em, 0)
+    }
+
+    65 {
+        transform: translate(2em, 0)
+    }
+
+    79% {
+        transform: translate(3em, 0)
+    }
+    82% {
+        transform: translate(2em, 0)
+    }
+
+    95% {
+        transform: translate(3em, 0)
+    }
+
+    100% {
+        transform: translate(2em, 0)
+    }
+
+
+}
+
+@keyframes tremble {
+    3%,
+    21%,
+    39%,
+    57%,
+    74%,
+    92% {
+        transform: translateY(5px)
+    }
+    6%,
+    24%,
+    42%,
+    60%,
+    77%,
+    95% {
+        transform: translateY(3px)
+    }
+    9%,
+    27%,
+    45%,
+    63%,
+    80%,
+    98% {
+        transform: translateY(-5px)
+    }
+}
+
+@keyframes scale-text {
+    0% {
+        font-size: 1.5em;
+        opacity: 1;
+    }
+
+    100% {
+        font-size: 1em;
+        opacity: .5;
+    }
+}
+
+@keyframes scale-text2 {
+    0% {
+        font-size: 1em;
+        opacity: .1;
+    }
+
+    100% {
+        font-size: 2em;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(110%);
+    }
