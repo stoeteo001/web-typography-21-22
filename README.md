@@ -44,6 +44,7 @@ Ik ben over het algemeen niet goed in het schrijven van code, daarom was dit bes
 Het lastigste was hoe ik de image aanriep tot een bepaald punt en hoe deze weer op een bepaalde tijd verdween. dit heb ik gedaan door de image in een div aan te roepen en dan daarvoor een ID aan te maken waar je hem benoemd en hem plaatst in het grid.
 
 Exclusive design:
+
 consider al users: De opdracht is om rekenening te houden met dove mensen maar ik probeer ook rekening te houden met slechtziende door zoveel mogelijk contrastvolle beelden te gebruiken zoals rood op grijs en wit op zwart.
 Be consistent: Ik gebruik over het algemeen vaak de zelfde kleuren en animaties dus ik probeer zo consistent mogelijk te zijn in de ontwerpen die ik gebruik, alleen afentoe pas ik iets toe om de de conventie te negeren zoals de gif die bij het ondervragings fragment die dan de stijl probeert te breken.
 add value: Heb ik geprobeerd toe te voegen door de duidelijkere geluiden te versterken door de animaties meer over de top te laten over komen, daarnaast om de klemtoon van hoe iets gezegd word ook nog te versterken door animaties toe te voegen op de closed captions.
